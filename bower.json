@@ -1,0 +1,17 @@
+{
+  "name": "njs-chat",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mustafa Sanlı <msanli14@posta.pau.edu.tr>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/anonymustafa/NJS-CHAT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
