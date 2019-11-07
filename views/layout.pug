@@ -4,4 +4,10 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    div(ng-app="njs-chat", ng-cloak)
+      block content
+        
+
+    block javascripts
+      script(src='/angular/angular.min.js') 
+      script(src='/javascripts/main.js')
