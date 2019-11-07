@@ -41,7 +41,7 @@ typings/
 
 # Optional npm cache directory
 .npm
-
+.gitignore
 .env
 
 # Optional eslint cache

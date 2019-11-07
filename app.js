@@ -15,6 +15,9 @@ const usersRouter = require('./routes/users');
 // app
 const app = express();
 
+// mongodb initialization
+const db = require('./helper/db')();
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
