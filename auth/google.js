@@ -12,7 +12,7 @@ passport.use(new GoogleStrategy({
     callbackURL: process.env.GOOGLE_LOGIN_CALLBACK_URL
 }, (accessToken, refreshToken, profile, done) => {
     const data = profile._json;
-    console.log(data);
+    //console.log(data);
     User.findOrCreate({
         'googleId': data.id
     }, 
@@ -29,6 +29,10 @@ passport.use(new GoogleStrategy({
 ** user -> session
 */
 passport.serializeUser((user, done) => {
+    done(null, user);
+});
+
+passport.deserializeUser((user, done) => {
     done(null, user);
 });
 
