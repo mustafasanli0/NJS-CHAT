@@ -7,6 +7,7 @@
     "start:dev": "nodemon ./bin/www"
   },
   "dependencies": {
+    "connect-redis": "^4.0.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
@@ -21,6 +22,7 @@
     "pug": "2.0.0-beta11"
   },
   "devDependencies": {
-    "mongoose": "^5.7.8"
+    "mongoose": "^5.7.8",
+    "redis": "^2.8.0"
   }
 }

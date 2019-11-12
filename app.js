@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const session = require('express-session');
 const passport = require('passport');
+const redisStore = require('./helper/redisStore');
 const dotenv = require('dotenv');
 
 // env initializer
@@ -36,6 +37,7 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 
 // espress session
 app.use(session({
+  store: redisStore,
   secret: process.env.SESSION_SECRET_KEY,
   resave: false,
   saveUninitialized: true,
