@@ -8,7 +8,7 @@ const User = require('../models/Users');
 // middlewares
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_LOGIN_CLIENT_ID,
-    clientSecret: process.env.GOOGLE_LOGIN_CLIENT_SECRET,
+    clientSecret: process.env.GOOGLE_LOGIN_SECRET_ID,
     callbackURL: process.env.GOOGLE_LOGIN_CALLBACK_URL
 }, (accessToken, refreshToken, profile, done) => {
     const data = profile._json;
